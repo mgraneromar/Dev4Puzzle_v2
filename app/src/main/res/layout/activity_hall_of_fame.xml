@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listResultados"
+    android:background="@drawable/fondohalloffame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HallOfFame">
+
+    <ListView
+        android:id="@+id/listViewResultados"
+        android:layout_width="374dp"
+        android:layout_height="340dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <Button
+        android:id="@+id/buttonHallFame"
+        android:layout_width="197dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="33dp"
+        android:text="ACEPTAR"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewResultados" />
+</android.support.constraint.ConstraintLayout>

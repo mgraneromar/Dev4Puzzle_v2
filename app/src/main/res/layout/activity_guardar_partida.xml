@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondoguardarpartida"
+    android:layout_height="match_parent"
+    tools:context=".GuardarPartida">
+
+    <TextView
+        android:id="@+id/tiempoJugador"
+        android:layout_width="379dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/white"
+        android:fontFamily="casual"
+        android:text="TextView"
+        android:textColor="#0B0A0A"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <TextView
+        android:id="@+id/nombreJugador"
+        android:layout_width="264dp"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:fontFamily="casual"
+        android:text="TextView"
+        android:textColor="#100F0F"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="201dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="69dp"
+        android:background="@drawable/button"
+        android:text="GUARDAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiempoJugador" />
+
+</android.support.constraint.ConstraintLayout>

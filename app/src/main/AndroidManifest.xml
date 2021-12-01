@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dev4puzzle_v3">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconodev4"
+        android:label="Dev4Puzzle"
+        android:roundIcon="@drawable/iconodev4"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DEV4PUZZLE_v3">
+        <activity
+            android:name=".HallOfFame"
+            android:exported="true" />
+        <activity
+            android:name=".GuardarPartida"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuPrincipal"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEV4PUZZLE_v3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".PuzzleActivity" />
+        <activity android:name=".Ayuda" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+        <service android:name=".ServicioMusica"
+            android:enabled="true"></service>
+
+    </application>
+
+</manifest>
